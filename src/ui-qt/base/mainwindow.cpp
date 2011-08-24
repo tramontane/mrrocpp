@@ -291,8 +291,8 @@ void MainWindow::open_new_window_slot(wgt_base *window, bool set_on_top)
 
 	//wgt_base::my_open_ptr func2=;
 
-	(*window.*openFunctionPointer)(set_on_top);
-	//window->my_open();
+	//(*window.*openFunctionPointer)(set_on_top);
+	window->my_open(set_on_top);
 }
 
 
