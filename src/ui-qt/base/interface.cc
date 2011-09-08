@@ -1,3 +1,8 @@
+/*!
+ * @file
+ * @brief File contains Interface class definitions
+ */
+
 #include <cstdio>
 #include <cstdlib>
 #include <unistd.h>
@@ -329,7 +334,6 @@ void Interface::timer_slot()
 
 void Interface::raise_process_control_window()
 {
-	//ui->notification_label->setText("GUGUGU");
 	emit raise_process_control_window_signal();
 }
 

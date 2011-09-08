@@ -1,6 +1,10 @@
-/* Y o u r   D e s c r i p t i o n                       */
-/*                            AppBuilder Photon Code Lib */
-/*                                         Version 2.01  */
+/*!
+ * @file
+ * @brief File containing the definitions of the common::UiRobot class.
+ *
+ *
+ * @ingroup ui
+ */
 #include "ui_robot.h"
 #include "interface.h"
 #include "base/ecp/ecp_robot.h"
@@ -44,7 +48,7 @@ UiRobot::UiRobot(Interface& _interface, lib::robot_name_t _robot_name, int _numb
 	msg =
 			(boost::shared_ptr <lib::sr_ecp>) new lib::sr_ecp(lib::ECP, "ui_" + robot_name, interface.network_sr_attach_point);
 
-	process_control_window_created = false;
+	//process_control_window_created = false;
 	wgt_robot_pc = new wgt_robot_process_control("R PC", interface, this, interface.get_main_window());
 
 	current_pos = new double[number_of_servos];
@@ -96,15 +100,15 @@ void UiRobot::zero_desired_position()
 		desired_pos[i] = 0.0;
 }
 
-bool UiRobot::is_process_control_window_created()
-{
-	return process_control_window_created;
-}
-
-void UiRobot::indicate_process_control_window_creation()
-{
-	process_control_window_created = true;
-}
+//bool UiRobot::is_process_control_window_created()
+//{
+//	return process_control_window_created;
+//}
+//
+//void UiRobot::indicate_process_control_window_creation()
+//{
+//	process_control_window_created = true;
+//}
 
 void UiRobot::block_ecp_trigger()
 {

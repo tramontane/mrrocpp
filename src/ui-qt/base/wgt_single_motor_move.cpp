@@ -1,3 +1,9 @@
+/*!
+ * @file
+ * @brief File containing the definitions of the wgt_single_motor_move class.
+ *
+ *
+ */
 #include "../base/ui_ecp_robot/ui_ecp_r_common.h"
 #include "../base/ui_r_single_motor.h"
 

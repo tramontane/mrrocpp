@@ -1,9 +1,9 @@
-// -------------------------------------------------------------------------
-//                            robot.h
-// Definicje struktur danych i metod do komunikacji UI z EDP
-//
-// Ostatnia modyfikacja: 16.04.98
-// -------------------------------------------------------------------------
+/*!
+ * @file
+ * @brief File containing the declaration of the mrrocpp::ui::bird_hand::EcpRobot class.
+ *
+ *
+ */
 
 #ifndef _UI_ECP_R_BIRD_HAND_H
 #define _UI_ECP_R_BIRD_HAND_H
@@ -29,22 +29,23 @@ class EcpRobot : public common::EcpRobotDataPort
 
 public:
 
-	// zadawanie nastaw regulatorow
+	//! Setting regulators.
 	mrrocpp::lib::single_thread_port <mrrocpp::lib::bird_hand::command> *bird_hand_command_data_port;
 
-	// zadawanie parametrow konfiguracji
+	//! Setting configuration.
 	lib::single_thread_port <lib::bird_hand::configuration> *bird_hand_configuration_command_data_port;
 
-	// odbieranie statusu robota
+	//! Replying robot`s status.
 	lib::single_thread_request_port <lib::bird_hand::status> *bird_hand_status_reply_data_request_port;
 
-	// odczytanie parametrow konfiguracji
+	//! Reading configuration parameters.
 	lib::single_thread_request_port <lib::bird_hand::configuration> *bird_hand_configuration_reply_data_request_port;
 
-	// ecp_buffer ui_edp_package; // by Y
+	/**
+	 * @brief Constructor.
+	 * @param _ui_robot Reference to robot.
+	 */
 	EcpRobot(common::UiRobot& _ui_robot); // Konstruktor
-
-
 };
 
 }

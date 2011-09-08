@@ -1,3 +1,10 @@
+/*!
+ * @file
+ * @brief File containing the definitions of the WgtToolBase class.
+ *
+ * @author mwroble1
+ *
+ */
 #include "WgtToolBase.h"
 #include "WgtToolBase.h"
 #include "ui_robot.h"
@@ -8,8 +15,8 @@ const int WgtToolBase::angle_axis_number = 6;
 WgtToolBase::WgtToolBase(QString _widget_label, mrrocpp::ui::common::Interface& _interface, mrrocpp::ui::common::UiRobot *robo, QWidget *parent):
 	wgt_base(_widget_label, _interface, robo, parent)
 {
-	ui.setupUi(this);
-	setup_ui(ui.gridLayout);
+//	ui.setupUi(this);
+//	setup_ui(ui.gridLayout);
 }
 
 WgtToolBase::~WgtToolBase()

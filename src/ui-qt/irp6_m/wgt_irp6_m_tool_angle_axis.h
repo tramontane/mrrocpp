@@ -11,6 +11,7 @@
 #include "robot/irp6ot_m/const_irp6ot_m.h"
 #include "robot/irp6p_m/const_irp6p_m.h"
 #include "../../base/lib/mrmath/mrmath.h"
+#include "ui_wgt_tool_template.h"
 
 namespace mrrocpp {
 namespace ui {
@@ -49,7 +50,7 @@ public:
 //	virtual void setup_ui(){};
 private:
 	mrrocpp::ui::irp6_m::UiRobot *robot;
-
+	Ui::wgt_tool_template ui;
 	mrrocpp::lib::Xyz_Angle_Axis_vector tool_vector;
 //	const static int aa_number;
 

@@ -1,9 +1,9 @@
-// -------------------------------------------------------------------------
-//                            ui_class.h
-// Definicje klasy Ui
-//
-// Ostatnia modyfikacja: 2010
-// -------------------------------------------------------------------------
+/*!
+ * @file
+ * @brief File containing the declaration of the mrrocpp::ui::conveyor::UiRobot class.
+ *
+ *
+ */
 
 #ifndef __UI_R_CONVEYOR_H
 #define __UI_R_CONVEYOR_H

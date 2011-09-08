@@ -1,6 +1,9 @@
-/* Y o u r   D e s c r i p t i o n                       */
-/*                            AppBuilder Photon Code Lib */
-/*                                         Version 2.01  */
+/*!
+ * @file
+ * @brief File containing the definitions of the mrrocpp::ui::shead::UiRobot class.
+ *
+ *
+ */
 
 #include "ui_r_shead.h"
 #include "ui_ecp_r_shead.h"

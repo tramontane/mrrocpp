@@ -49,7 +49,7 @@ public:
 //	virtual void add_button(QPushButton *button, int row, int space){};
 //	virtual void setup_ui(){};
 private:
-	//Ui::wgt_tool_template ui;
+	Ui::wgt_tool_template ui;
 	mrrocpp::ui::irp6_m::UiRobot *robot;
 
 	int init();

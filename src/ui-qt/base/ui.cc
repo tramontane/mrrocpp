@@ -1,6 +1,10 @@
-/* Y o u r   D e s c r i p t i o n                       */
-/*                            AppBuilder Photon Code Lib */
-/*                                         Version 2.01  */
+/*!
+ * @file
+ * @brief File containing the definitions of the mrrocpp::ui::common::function_execution_buffer,
+ * mrrocpp::ui::common::feb_thread, mrrocpp::ui::common::busy_flagger, mrrocpp::ui::common::busy_flag classes and state enums.
+ *
+ *
+ */
 
 #include <boost/thread/mutex.hpp>
 #include <boost/thread/thread.hpp>

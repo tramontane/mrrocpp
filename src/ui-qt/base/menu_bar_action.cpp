@@ -1,3 +1,12 @@
+/*!
+ * @file
+ * @brief File containing the definitions of the MenuBarAction class.
+ *
+ * @author mwroble1
+ *
+ * @ingroup Ui
+ */
+
 #include "menu_bar_action.h"
 #include "signal_dispatcher.h"
 

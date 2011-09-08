@@ -1,3 +1,13 @@
+/*!
+ * @file
+ * @brief File containing the definitions of the wgt_robot_process_control class.
+ *
+ * @author mwroble1
+ *
+ * @ingroup ui
+ */
+
+
 #include "../irp6ot_m/ui_r_irp6ot_m.h"
 #include "../irp6p_m/ui_r_irp6p_m.h"
 #include "../conveyor/ui_r_conveyor.h"
@@ -45,30 +55,31 @@ void wgt_robot_process_control::my_open(bool set_on_top)
 //ECP
 void wgt_robot_process_control::on_ecp_trigger_pushButton_clicked()
 {
-	interface.all_robots->pulse_trigger_ecp(robot);
+	//interface.all_robots->pulse_trigger_ecp(robot);
+	robot->pulse_ecp();
 }
 
 // Reader
 void wgt_robot_process_control::on_reader_start_pushButton_clicked()
 {
-	interface.all_robots->pulse_start_reader(robot);
+	robot->pulse_reader_start_exec_pulse();
+	interface.manage_pc();
 }
 
 void wgt_robot_process_control::on_reader_stop_pushButton_clicked()
 {
-	interface.all_robots->pulse_stop_reader(robot);
+	robot->pulse_reader_stop_exec_pulse();
+	interface.manage_pc();
 }
 
 void wgt_robot_process_control::on_reader_trigger_pushButton_clicked()
 {
-	interface.all_robots->pulse_trigger_reader(robot);
+	robot->pulse_reader_trigger_exec_pulse();
 }
 
 // aktualizacja ustawien przyciskow
 int wgt_robot_process_control::init()
-
 {
-
 	bool wlacz_PtButton_wnd_processes_control_all_reader_start = false;
 	bool wlacz_PtButton_wnd_processes_control_all_reader_stop = false;
 	bool wlacz_PtButton_wnd_processes_control_all_reader_trigger = false;
@@ -139,9 +150,7 @@ int wgt_robot_process_control::init()
 }
 
 int wgt_robot_process_control::block_all_ecp_trigger_widgets()
-
 {
-
 	ui->ecp_trigger_pushButton->setDisabled(true);
 
 	return 1;

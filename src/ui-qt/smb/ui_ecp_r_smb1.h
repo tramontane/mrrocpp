@@ -1,10 +1,9 @@
-// -------------------------------------------------------------------------
-//                            robot.h
-// Definicje struktur danych i metod do komunikacji UI z EDP
-//
-// Ostatnia modyfikacja: 16.04.98
-// -------------------------------------------------------------------------
-
+/*!
+ * @file
+ * @brief File containing the definitions of the mrrocpp::ui::smb1::EcpRobot class.
+ *
+ *
+ */
 #ifndef _UI_ECP_R_SMB1_H
 #define _UI_ECP_R_SMB1_H
 

@@ -1,12 +1,12 @@
-// -------------------------------------------------------------------------
-//                            robot.h
-// Definicje struktur danych i metod do komunikacji UI z EDP
-//
-// Ostatnia modyfikacja: 16.04.98
-// -------------------------------------------------------------------------
+/*!
+ * @file
+ * @brief File containing the declaration of the mrrocpp::ui::sbench::EcpRobot class.
+ *
+ *
+ */
 
-#ifndef _UI_ECP_R_SMB_H
-#define _UI_ECP_R_SMB_H
+#ifndef _UI_ECP_R_SBENCH_H
+#define _UI_ECP_R_SBENCH_H
 
 #include "../base/ui.h"
 // Konfigurator.

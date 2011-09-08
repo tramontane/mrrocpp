@@ -1,9 +1,9 @@
-// -------------------------------------------------------------------------
-//                            ui_ecp->cc
-// Metody sluzace do komunikacji UI z EDP - zlecenia dla driver'a
-//
-// Ostatnio modyfikowany: 2005
-// -------------------------------------------------------------------------
+/*!
+ * @file
+ * @brief File containing the declaration of the mrrocpp::ui::smb1::EcpRobot class.
+ *
+ *
+ */
 
 /* Standard headers */
 #include <iostream>

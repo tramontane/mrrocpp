@@ -1,3 +1,11 @@
+/*!
+ * @file
+ * @brief File containing the definitions of the wgt_process_control class.
+ *
+ * @author mwroble1
+ *
+ */
+
 #include <boost/foreach.hpp>
 
 #include "../irp6ot_m/ui_r_irp6ot_m.h"

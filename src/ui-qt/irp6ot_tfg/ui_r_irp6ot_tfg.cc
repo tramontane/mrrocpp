@@ -1,6 +1,9 @@
-/* Y o u r   D e s c r i p t i o n                       */
-/*                            AppBuilder Photon Code Lib */
-/*                                         Version 2.01  */
+/*!
+ * @file
+ * @brief File containing the definitions of the mrrocpp::ui::irp6ot_tfg::UiRobot class.
+ *
+ *
+ */
 
 #include "ui_r_irp6ot_tfg.h"
 #include "../base/ui_ecp_robot/ui_ecp_r_common.h"

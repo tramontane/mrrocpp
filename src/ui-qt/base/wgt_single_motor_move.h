@@ -1,3 +1,9 @@
+/*!
+ * @file
+ * @brief File containing the declaration of the wgt_single_motor_move class.
+ *
+ *
+ */
 #ifndef WGT_SINGLE_MOTOR_MOVE_H
 #define WGT_SINGLE_MOTOR_MOVE_H
 
@@ -15,20 +21,30 @@ class UiRobot;
 }
 namespace single_motor {
 class UiRobot;
-
 }
 }
 }
-
+/*!
+ *
+ * @brief Class for creating window for single motor.
+ *
+ *
+ */
 class wgt_single_motor_move : public wgt_base
 {
 Q_OBJECT
 
 public:
-	wgt_single_motor_move(QString _widget_label, mrrocpp::ui::common::Interface& _interface, mrrocpp::ui::common::UiRobot* _robot, QWidget *parent =
-					0);
+	/**
+	 * @brief Constructor.
+	 * @param _widget_label Window title.
+	 * @param _interface A reference to Interface object - main ui class.
+	 * @param _robot A pointer to robot for which the window will be opened.
+	 * @param parent Pointer to object`s parent.
+	 */
+	wgt_single_motor_move(QString _widget_label, mrrocpp::ui::common::Interface& _interface, mrrocpp::ui::common::UiRobot* _robot, QWidget *parent = 0);
+	//! Destructor.
 	~wgt_single_motor_move();
-
 	void synchro_depended_init();
 	void init_and_copy();
 	void my_open(bool set_on_top=false);

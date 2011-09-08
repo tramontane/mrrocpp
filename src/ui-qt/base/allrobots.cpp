@@ -1,3 +1,12 @@
+/*!
+ * @file
+ * @brief File containing the definitions of the AllRobots class.
+ *
+ * @author mwroble1
+ *
+ * @ingroup ui
+ */
+
 #include "allrobots.h"
 #include "mainwindow.h"
 #include "interface.h"
@@ -264,26 +273,26 @@ int AllRobots::pulse_trigger_all_reader()
 	return 1;
 }
 
-int AllRobots::pulse_start_reader(UiRobot *robot)
-{
-	robot->pulse_reader_start_exec_pulse();
-	interface->manage_pc();
-
-	return 1;
-}
-
-int AllRobots::pulse_stop_reader(UiRobot *robot)
-{
-	robot->pulse_reader_stop_exec_pulse();
-	interface->manage_pc();
-	return 1;
-}
-
-int AllRobots::pulse_trigger_reader(UiRobot *robot)
-{
-	robot->pulse_reader_trigger_exec_pulse();
-	return 1;
-}
+//int AllRobots::pulse_start_reader(UiRobot *robot)
+//{
+//	robot->pulse_reader_start_exec_pulse();
+//	interface->manage_pc();
+//
+//	return 1;
+//}
+//
+//int AllRobots::pulse_stop_reader(UiRobot *robot)
+//{
+//	robot->pulse_reader_stop_exec_pulse();
+//	interface->manage_pc();
+//	return 1;
+//}
+//
+//int AllRobots::pulse_trigger_reader(UiRobot *robot)
+//{
+//	robot->pulse_reader_trigger_exec_pulse();
+//	return 1;
+//}
 
 //ECP pulse
 int AllRobots::pulse_trigger_ecp()
@@ -297,13 +306,13 @@ int AllRobots::pulse_trigger_ecp()
 	return 1;
 }
 
-//ECP pulse
-int AllRobots::pulse_trigger_ecp(UiRobot *robot)
-{
-
-	robot->pulse_ecp();
-	return 1;
-}
+////ECP pulse
+//int AllRobots::pulse_trigger_ecp(UiRobot *robot)
+//{
+//
+//	robot->pulse_ecp();
+//	return 1;
+//}
 
 int AllRobots::all_robots_move_to_synchro_position()
 

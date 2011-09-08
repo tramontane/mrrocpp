@@ -1,9 +1,10 @@
-// -------------------------------------------------------------------------
-//                            ui.h
-// Definicje struktur danych i metod dla procesu UI
-//
-// Ostatnia modyfikacja: 16.04.98
-// -------------------------------------------------------------------------
+/*!
+ * @file
+ * @brief File containing the declaration of the mrrocpp::ui::common::function_execution_buffer,
+ * mrrocpp::ui::common::feb_thread, mrrocpp::ui::common::busy_flagger, mrrocpp::ui::common::busy_flag classes and state enums.
+ *
+ *
+ */
 
 #ifndef __UI_H
 #define __UI_H
@@ -149,6 +150,12 @@ typedef struct
 	bool is_qnx;
 } program_node_user_def;
 
+/*!
+ *
+ * @brief class creating function execution buffer.
+ *
+ *
+ */
 class function_execution_buffer
 {
 public:
@@ -166,6 +173,12 @@ private:
 	command_function_t com_fun; //! command functor
 };
 
+/*!
+ *
+ * @brief class creating feb thread.
+ *
+ *
+ */
 class feb_thread : public boost::noncopyable
 {
 private:
@@ -182,7 +195,12 @@ public:
 
 // forward declaration
 class busy_flag;
-
+/*!
+ *
+ * @brief class creating busy flagger.
+ *
+ *
+ */
 class busy_flagger
 {
 private:
@@ -196,7 +214,12 @@ public:
 	//! desctructor makes flag unbusy
 	~busy_flagger();
 };
-
+/*!
+ *
+ * @brief class creating busy flag.
+ *
+ *
+ */
 class busy_flag
 {
 	friend class busy_flagger;

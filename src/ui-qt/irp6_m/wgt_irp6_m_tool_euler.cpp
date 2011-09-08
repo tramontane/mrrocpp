@@ -15,7 +15,8 @@ wgt_irp6_m_tool_euler::wgt_irp6_m_tool_euler(QString _widget_label, mrrocpp::ui:
 {
 	//ui.setupUi(this);
 	robot = dynamic_cast<mrrocpp::ui::irp6_m::UiRobot *>(_robot);
-
+	ui.setupUi(this);
+	setup_ui(ui.gridLayout);
 //	connect(this, SIGNAL(synchro_depended_init_signal()), this, SLOT(synchro_depended_init_slot()), Qt::QueuedConnection);
 //	connect(this, SIGNAL(init_and_copy_signal()), this, SLOT(init_and_copy_slot()), Qt::QueuedConnection);
 //

@@ -1,6 +1,9 @@
-/* Y o u r   D e s c r i p t i o n                       */
-/*                            AppBuilder Photon Code Lib */
-/*                                         Version 2.01  */
+/*!
+ * @file
+ * @brief File containing the definitions of the mrrocpp::ui::irp6ot_m::UiRobot class.
+ *
+ *
+ */
 
 #include "../irp6_m/wgt_irp6_m_joints.h"
 #include "../irp6_m/wgt_irp6_m_motors.h"

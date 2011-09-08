@@ -1,3 +1,11 @@
+/*!
+ * @file
+ * @brief File containing the definitions of the Mp class.
+ *
+ * @author mwroble1
+ *
+ * @ingroup Ui
+ */
 #include "mp.h"
 #include "allrobots.h"
 #include "mainwindow.h"
@@ -21,13 +29,11 @@ Mp::Mp(Interface *iface) :
 }
 
 int Mp::MPup()
-
 {
 	//eb.command(boost::bind(&ui::spkm::UiRobot::execute_motor_motion, &(*this)));
 	interface->main_eb->command(boost::bind(&ui::common::Mp::MPup_int, &(*this)));
 
 	return 1;
-
 }
 
 int Mp::MPup_int()

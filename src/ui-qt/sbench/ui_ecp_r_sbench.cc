@@ -1,3 +1,9 @@
+/*!
+ * @file
+ * @brief File containing the definitions of the mrrocpp::ui::sbench::EcpRobot class.
+ *
+ *
+ */
 #include "base/lib/typedefs.h"
 #include "base/lib/impconst.h"
 #include "base/lib/com_buf.h"

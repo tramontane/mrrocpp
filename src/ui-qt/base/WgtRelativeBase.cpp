@@ -1,12 +1,10 @@
-/*
- * WgtRelativeBase.cpp
+/*!
+ * @file
+ * @brief File containing the definitions of the WgtRelativeBase class.
  *
- *  Created on: 14-07-2011
- *      Author: matt
+ * @author mwroble1
+ *
  */
-
-
-
 #include "WgtRelativeBase.h"
 #include "ui_robot.h"
 #include "interface.h"

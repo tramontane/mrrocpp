@@ -1,3 +1,10 @@
+/*!
+ * @file
+ * @brief File containing the definitions of the mrrocpp::ui::smb::UiRobot class.
+ *
+ *
+ */
+
 #include "ui_r_smb.h"
 #include "ui_ecp_r_smb.h"
 #include "robot/smb/const_smb.h"

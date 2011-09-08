@@ -1,3 +1,13 @@
+/*!
+ * @file
+ * @brief File containing the definitions of the wgt_base class.
+ *
+ * @author mwroble1
+ *
+ */
+
+
+
 #include "wgt_base.h"
 #include "interface.h"
 #include "mainwindow.h"

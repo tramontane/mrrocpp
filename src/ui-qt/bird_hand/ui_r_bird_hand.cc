@@ -1,6 +1,10 @@
-/* Y o u r   D e s c r i p t i o n                       */
-/*                            AppBuilder Photon Code Lib */
-/*                                         Version 2.01  */
+/*!
+ * @file
+ * @brief File containing the definitions of the mrrocpp::ui::bird_hand::UiRobot class.
+ *
+ *
+ */
+
 
 #include "ui_ecp_r_bird_hand.h"
 #include "ui_r_bird_hand.h"

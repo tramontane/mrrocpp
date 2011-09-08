@@ -1,6 +1,10 @@
-/* Y o u r   D e s c r i p t i o n                       */
-/*                            AppBuilder Photon Code Lib */
-/*                                         Version 2.01  */
+/*!
+ * @file
+ * @brief File containing the definitions of the single_motor class.
+ *
+ *
+ * @ingroup ui
+ */
 
 #include "ui_r_single_motor.h"
 #include "../base/ui_ecp_robot/ui_ecp_r_common.h"

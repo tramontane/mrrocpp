@@ -1,10 +1,11 @@
-/*
- * WgtAbsoluteBase.cpp
+/*!
+ * @file
+ * @brief File containing the definitions of the WgtAbsoluteBase class.
  *
- *  Created on: 14-07-2011
- *      Author: matt
+ * @author mwroble1
+ *
+ * @ingroup Ui
  */
-
 #include "WgtAbsoluteBase.h"
 #include "ui_robot.h"
 #include "interface.h"

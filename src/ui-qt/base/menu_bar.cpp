@@ -1,3 +1,12 @@
+/*!
+ * @file
+ * @brief File containing the definitions of the MenuBar class.
+ *
+ * @author mwroble1
+ *
+ * @ingroup Ui
+ */
+
 #include <QApplication>
 #include "menu_bar.h"
 #include "interface.h"
@@ -13,10 +22,6 @@ namespace Ui
 MenuBar::MenuBar(mrrocpp::ui::common::Interface* iface, QWidget *parent) : QMenuBar(parent), interface(iface)
 {
 
-
-	//setupMenuBar(MainWindow);
-	//signalMapper = new QSignalMapper(this);
-	//connect(signalMapper, SIGNAL(mapped(QString)))
 }
 
 
@@ -27,8 +32,6 @@ void MenuBar::setupMenuBar(QMainWindow *mainWindow)
     actionQuit->setObjectName(QString::fromUtf8("actionQuit"));
     actionClear_Console = new QAction(mainWindow);
     actionClear_Console->setObjectName(QString::fromUtf8("actionClear_Console"));
-    actionEDP_load_smb = new QAction(mainWindow);
-    actionEDP_load_smb->setObjectName(QString::fromUtf8("actionEDP_load_smb"));
     actionUnload_All = new QAction(mainWindow);
     actionUnload_All->setObjectName(QString::fromUtf8("actionUnload_All"));
     actionSlay_All = new QAction(mainWindow);
@@ -60,54 +63,6 @@ void MenuBar::setupMenuBar(QMainWindow *mainWindow)
     actionConfiguration = new QAction(mainWindow);
     actionConfiguration->setObjectName(QString::fromUtf8("actionConfiguration"));
 
-
-
-
-//    actionspeaker_EDP_Load = new QAction(mainWindow);
-//    actionspeaker_EDP_Load->setObjectName(QString::fromUtf8("actionspeaker_EDP_Load"));
-//    actionspeaker_EDP_Unload = new QAction(mainWindow);
-//    actionspeaker_EDP_Unload->setObjectName(QString::fromUtf8("actionspeaker_EDP_Unload"));
-//    actionspeaker_Play = new QAction(mainWindow);
-//    actionspeaker_Play->setObjectName(QString::fromUtf8("actionspeaker_Play"));
-//    actionspeaker_Sound_0 = new QAction(mainWindow);
-//    actionspeaker_Sound_0->setObjectName(QString::fromUtf8("actionspeaker_Sound_0"));
-//    actionspeaker_Sound_1 = new QAction(mainWindow);
-//    actionspeaker_Sound_1->setObjectName(QString::fromUtf8("actionspeaker_Sound_1"));
-//    actionspeaker_Sound_2 = new QAction(mainWindow);
-//    actionspeaker_Sound_2->setObjectName(QString::fromUtf8("actionspeaker_Sound_2"));
-//    actionirp6_Mechatronika_EDP_Load = new QAction(mainWindow);
-//    actionirp6_Mechatronika_EDP_Load->setObjectName(QString::fromUtf8("actionirp6_Mechatronika_EDP_Load"));
-//    actionirp6_Mechatronika_EDP_Unload = new QAction(mainWindow);
-//    actionirp6_Mechatronika_EDP_Unload->setObjectName(QString::fromUtf8("actionirp6_Mechatronika_EDP_Unload"));
-//    actionirp6_Mechatronika_Synchronization = new QAction(mainWindow);
-//    actionirp6_Mechatronika_Synchronization->setObjectName(QString::fromUtf8("actionirp6_Mechatronika_Synchronization"));
-//    actionirp6_Mechatronika_Pre_Synchro_Moves_Motors = new QAction(mainWindow);
-//    actionirp6_Mechatronika_Pre_Synchro_Moves_Motors->setObjectName(QString::fromUtf8("actionirp6_Mechatronika_Pre_Synchro_Moves_Motors"));
-//    actionirp6_Mechatronika_Absolute_Moves_Motors = new QAction(mainWindow);
-//    actionirp6_Mechatronika_Absolute_Moves_Motors->setObjectName(QString::fromUtf8("actionirp6_Mechatronika_Absolute_Moves_Motors"));
-//    actionirp6_Mechatronika_Joints = new QAction(mainWindow);
-//    actionirp6_Mechatronika_Joints->setObjectName(QString::fromUtf8("actionirp6_Mechatronika_Joints"));
-//    actionirp6_Mechatronika_Xyz_Euler_Zyz = new QAction(mainWindow);
-//    actionirp6_Mechatronika_Xyz_Euler_Zyz->setObjectName(QString::fromUtf8("actionirp6_Mechatronika_Xyz_Euler_Zyz"));
-//    actionirp6_Mechatronika_Xyz_Angle_Axis = new QAction(mainWindow);
-//    actionirp6_Mechatronika_Xyz_Angle_Axis->setObjectName(QString::fromUtf8("actionirp6_Mechatronika_Xyz_Angle_Axis"));
-//    actionirp6_Mechatronika_Synchro_Position = new QAction(mainWindow);
-//    actionirp6_Mechatronika_Synchro_Position->setObjectName(QString::fromUtf8("actionirp6_Mechatronika_Synchro_Position"));
-//    actionirp6_Mechatronika_Position_0 = new QAction(mainWindow);
-//    actionirp6_Mechatronika_Position_0->setObjectName(QString::fromUtf8("actionirp6_Mechatronika_Position_0"));
-//    actionirp6_Mechatronika_Position_1 = new QAction(mainWindow);
-//    actionirp6_Mechatronika_Position_1->setObjectName(QString::fromUtf8("actionirp6_Mechatronika_Position_1"));
-//    actionirp6_Mechatronika_Position_2 = new QAction(mainWindow);
-//    actionirp6_Mechatronika_Position_2->setObjectName(QString::fromUtf8("actionirp6_Mechatronika_Position_2"));
-//    actionirp6_Mechatronika_Tool_Xyz_Euler_Zyz = new QAction(mainWindow);
-//    actionirp6_Mechatronika_Tool_Xyz_Euler_Zyz->setObjectName(QString::fromUtf8("actionirp6_Mechatronika_Tool_Xyz_Euler_Zyz"));
-//    actionirp6_Mechatronika_Tool_Xyz_Angle_Axis = new QAction(mainWindow);
-//    actionirp6_Mechatronika_Tool_Xyz_Angle_Axis->setObjectName(QString::fromUtf8("actionirp6_Mechatronika_Tool_Xyz_Angle_Axis"));
-
-//    centralWidget = new QWidget(mainWindow);
-//    centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
-//    mainWindow->setCentralWidget(centralWidget);
-
     this->setObjectName(QString::fromUtf8("this"));
     this->setGeometry(QRect(0, 0, 1000, 25));
     menuRobot = new QMenu(this);
@@ -138,10 +93,6 @@ void MenuBar::setupMenuBar(QMainWindow *mainWindow)
 	this->addAction(menuHelp->menuAction());
 
 
-//	menuRobot->addSeparator();
-//	menuRobot->addSeparator();
-//	menuRobot->addSeparator();
-
 	menuFile->addAction(actionQuit);
 	menuSpecial->addAction(actionClear_Console);
 	menuSpecial->addSeparator();
@@ -171,7 +122,6 @@ void MenuBar::retranslateMenuBar()
 {
     actionQuit->setText(QApplication::translate("MainWindow", "&Quit", 0, QApplication::UnicodeUTF8));
     actionClear_Console->setText(QApplication::translate("MainWindow", "&Clear Console", 0, QApplication::UnicodeUTF8));
-    actionEDP_load_smb->setText(QApplication::translate("MainWindow", "EDP load", 0, QApplication::UnicodeUTF8));
     actionUnload_All->setText(QApplication::translate("MainWindow", "&Unload All", 0, QApplication::UnicodeUTF8));
     actionSlay_All->setText(QApplication::translate("MainWindow", "&Slay All", 0, QApplication::UnicodeUTF8));
     actionAbout->setText(QApplication::translate("MainWindow", "&About", 0, QApplication::UnicodeUTF8));
@@ -188,29 +138,6 @@ void MenuBar::retranslateMenuBar()
     actionProcess_Control->setText(QApplication::translate("MainWindow", "&Process Control", 0, QApplication::UnicodeUTF8));
     actionConfiguration->setText(QApplication::translate("MainWindow", "&Configuration", 0, QApplication::UnicodeUTF8));
 
-
-
-//    actionspeaker_EDP_Load->setText(QApplication::translate("MainWindow", "EDP &Load", 0, QApplication::UnicodeUTF8));
-//    actionspeaker_EDP_Unload->setText(QApplication::translate("MainWindow", "EDP &Load", 0, QApplication::UnicodeUTF8));
-//    actionspeaker_Play->setText(QApplication::translate("MainWindow", "&Play", 0, QApplication::UnicodeUTF8));
-//    actionspeaker_Sound_0->setText(QApplication::translate("MainWindow", "Sound &0", 0, QApplication::UnicodeUTF8));
-//    actionspeaker_Sound_1->setText(QApplication::translate("MainWindow", "Sound &1", 0, QApplication::UnicodeUTF8));
-//    actionspeaker_Sound_2->setText(QApplication::translate("MainWindow", "Sound &2", 0, QApplication::UnicodeUTF8));
-//    actionirp6_Mechatronika_EDP_Load->setText(QApplication::translate("MainWindow", "EDP &Load", 0, QApplication::UnicodeUTF8));
-//    actionirp6_Mechatronika_EDP_Unload->setText(QApplication::translate("MainWindow", "EDP &Unload", 0, QApplication::UnicodeUTF8));
-//    actionirp6_Mechatronika_Synchronization->setText(QApplication::translate("MainWindow", "&Synchronization", 0, QApplication::UnicodeUTF8));
-//    actionirp6_Mechatronika_Pre_Synchro_Moves_Motors->setText(QApplication::translate("MainWindow", "&Motors", 0, QApplication::UnicodeUTF8));
-//    actionirp6_Mechatronika_Absolute_Moves_Motors->setText(QApplication::translate("MainWindow", "&Motors", 0, QApplication::UnicodeUTF8));
-//    actionirp6_Mechatronika_Joints->setText(QApplication::translate("MainWindow", "&Joints", 0, QApplication::UnicodeUTF8));
-//    actionirp6_Mechatronika_Xyz_Euler_Zyz->setText(QApplication::translate("MainWindow", "Xyz &Euler Zyz", 0, QApplication::UnicodeUTF8));
-//    actionirp6_Mechatronika_Xyz_Angle_Axis->setText(QApplication::translate("MainWindow", "Xyz &Angle Axis", 0, QApplication::UnicodeUTF8));
-//    actionirp6_Mechatronika_Synchro_Position->setText(QApplication::translate("MainWindow", "&Synchro Position", 0, QApplication::UnicodeUTF8));
-//    actionirp6_Mechatronika_Position_0->setText(QApplication::translate("MainWindow", "Position &0", 0, QApplication::UnicodeUTF8));
-//    actionirp6_Mechatronika_Position_1->setText(QApplication::translate("MainWindow", "Position &1", 0, QApplication::UnicodeUTF8));
-//    actionirp6_Mechatronika_Position_2->setText(QApplication::translate("MainWindow", "Position &2", 0, QApplication::UnicodeUTF8));
-//    actionirp6_Mechatronika_Tool_Xyz_Euler_Zyz->setText(QApplication::translate("MainWindow", "Xyz &Euler Zyz", 0, QApplication::UnicodeUTF8));
-//    actionirp6_Mechatronika_Tool_Xyz_Angle_Axis->setText(QApplication::translate("MainWindow", "Xyz &Angle Axis", 0, QApplication::UnicodeUTF8));
-
     menuRobot->setTitle(QApplication::translate("MainWindow", "&Robot", 0, QApplication::UnicodeUTF8));
     menuFile->setTitle(QApplication::translate("MainWindow", "&File", 0, QApplication::UnicodeUTF8));
     menuSpecial->setTitle(QApplication::translate("MainWindow", "&Special", 0, QApplication::UnicodeUTF8));
@@ -224,7 +151,6 @@ void MenuBar::retranslateMenuBar()
 
 void MenuBar::makeConnections()
 {
-	printf("connected");
 	connect(actionall_EDP_Load, 		SIGNAL(triggered()), this, SLOT(on_actionall_EDP_Load_triggered()), 		Qt::QueuedConnection);
 	connect(actionall_EDP_Unload, 		SIGNAL(triggered()), this, SLOT(on_actionall_EDP_Unload_triggered()), 		Qt::QueuedConnection);
 	connect(actionall_Synchronisation, 	SIGNAL(triggered()), this, SLOT(on_actionall_Synchronisation_triggered()),	Qt::QueuedConnection);
@@ -246,7 +172,6 @@ void MenuBar::makeConnections()
 
 void MenuBar::on_actionall_EDP_Load_triggered()
 {
-	printf("action all edp triggered");
 	interface->all_robots->EDP_all_robots_create();
 }
 

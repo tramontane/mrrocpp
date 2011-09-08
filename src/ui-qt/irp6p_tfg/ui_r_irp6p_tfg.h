@@ -1,9 +1,9 @@
-// -------------------------------------------------------------------------
-//                            ui_class.h
-// Definicje klasy Ui
-//
-// Ostatnia modyfikacja: 2010
-// -------------------------------------------------------------------------
+/*!
+ * @file
+ * @brief File containing the declaration of the mrrocpp::ui::irp6p_tfg::UiRobot class.
+ *
+ *
+ */
 
 #ifndef __UI_R_IRP6P_TFG_H
 #define __UI_R_IRP6P_TFG_H

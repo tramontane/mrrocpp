@@ -1,9 +1,9 @@
-// -------------------------------------------------------------------------
-//                            ui_class.h
-// Definicje klasy Ui
-//
-// Ostatnia modyfikacja: 2010
-// -------------------------------------------------------------------------
+/*!
+ * @file
+ * @brief File containing the declaration of the mrrocpp::ui::polycrank::UiRobot class.
+ *
+ *
+ */
 
 #ifndef __UI_R_POLYCRANK_H
 #define __UI_R_POLYCRANK_H
